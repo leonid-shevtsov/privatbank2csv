@@ -1,0 +1,5 @@
+{
+  "card": "16-digit-card-number",
+  "merchant_id": "merchant-id-short-number",
+  "merchant_password": "password-long-alpha-numeric-string"
+}

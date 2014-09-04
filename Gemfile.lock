@@ -17,4 +17,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  nokogiri
   roo
