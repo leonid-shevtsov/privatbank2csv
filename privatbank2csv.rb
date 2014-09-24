@@ -20,7 +20,7 @@ transactions = statements.map do |row|
   end
   date, _card_number, memo, amount_card, currency_card, amount, currency, _balance = row
 
-  date_parts = date.match(/(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2})/)
+  date_parts = date.match(/(\d{2})[\/.](\d{2})[\/.](\d{4})(?: (\d{2}):(\d{2})(?::(\d{2})?))?/)
   date_obj = Time.mktime(date_parts[3], date_parts[2], date_parts[1], date_parts[4], date_parts[5])
 
   if currency_card != currency
